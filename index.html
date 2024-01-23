@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-
+    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
-
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+<style>*{font-family: Manrope;}</style>
 </head>
 
 <body class="w-[1440px]">
@@ -20,7 +20,7 @@
                 <h2 class="text-[#131318] font-extrabold text-4xl">Hockey<span class="text-[#FF4240]">’</span>s</h2>
             </div>
             <div>
-                <ul class="flex gap-11">
+                <ul class="lg:flex gap-11">
                     <li class="text-[#FF4240] text-[16px] font-bold "><a href="#">Home</a></li>
                     <li class="text-[#424247] text-[16px] font-normal"><a href="#">About</a></li>
                     <li class="text-[#424247] text-[16px] font-normal"><a href="#">Pages</a></li>
@@ -30,19 +30,34 @@
             </div>
             <div class=" flex justify-center items-center gap-6">
                 <svg class="w-6 h-6 " xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                        <path
-                            d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
-                    </svg>
+                    viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <path
+                        d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
+                </svg>
                 <button
-                        class="btn btn-primary text-white bg-[#FF4240] rounded-lg w-36 h-14 px-auto py-auto font-bold text-xl">Get
-                        Ticket</button>
+                    class="btn btn-primary text-white bg-[#FF4240] rounded-lg w-36 h-14 px-auto py-auto font-bold text-xl">Get
+                    Ticket</button>
             </div>
         </nav>
         <!--cover section-->
-        <div>
-            <div><img src="Images/1.png" alt=""></div>
+        <div class="w-[1170px h-[550px]">
+            <div class="bg-cover w-[1170px h-[550px]  mx-auto bg-center" style=" border-radius: 16px;
+            background: url(Images/1.png), lightgray 0px 0px / 100% 100% no-repeat;">
+                <div class="flex justify-between px-8 pb-8 pt-[353px]">
+                    <div class="flex gap-4 ">
+                        <svg class="w-10 h-10 mt-[120px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M512 256A256 256 0 1 0 0 256a256 256 0 1 0 512 0zM271 135c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-87 87 87 87c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0L167 273c-9.4-9.4-9.4-24.6 0-33.9L271 135z"/></svg>
+    
+                  
+                        <svg class="w-10 h-10 mt-[120px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM241 377c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l87-87-87-87c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L345 239c9.4 9.4 9.4 24.6 0 33.9L241 377z"/></svg>
+                    </div>
+                    <div class="w-[566px] h-[154px] bg-[#131318]  text-white py-8 px-8 space-y-4 rounded-2xl">
+                        <h3 class="w-[400px] text-2xl font-extrabold">Meet all the heroes from the field</h3>
+                        <p class="w-[502px] text-[16px] font-medium">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis,quia!</p>
+                    </div>
+                </div>
+            </div>
         </div>
+
     </header>
     <main>
 
