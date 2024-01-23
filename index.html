@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-    
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
-<style>*{font-family: Manrope;}</style>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
 </head>
 
 <body class="w-[1440px]">
@@ -17,10 +22,10 @@
         <!--navbar section-->
         <nav class="flex justify-between items-center  justify-center mx-0  my-12">
             <div>
-                <h2 class="text-[#131318] font-extrabold text-4xl">Hockey<span class="text-[#FF4240]">’</span>s</h2>
+                <h2 class="text-[#131318] font-extrabold  text-4xl">Hockey<span class="text-[#FF4240]">’</span>s</h2>
             </div>
             <div>
-                <ul class="lg:flex gap-11">
+                <ul class="lg:flex hidden gap-11">
                     <li class="text-[#FF4240] text-[16px] font-bold "><a href="#">Home</a></li>
                     <li class="text-[#424247] text-[16px] font-normal"><a href="#">About</a></li>
                     <li class="text-[#424247] text-[16px] font-normal"><a href="#">Pages</a></li>
@@ -29,42 +34,172 @@
                 </ul>
             </div>
             <div class=" flex justify-center items-center gap-6">
-                <svg class="w-6 h-6 " xmlns="http://www.w3.org/2000/svg"
+                <svg class="  w-6 h-6 " xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
                     <path
                         d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
                 </svg>
                 <button
-                    class="btn btn-primary text-white bg-[#FF4240] rounded-lg w-36 h-14 px-auto py-auto font-bold text-xl">Get
+                    class="btn btn-primary border-none text-white bg-[#FF4240] rounded-lg w-36 h-14 px-auto py-auto font-bold text-xl">Get
                     Ticket</button>
             </div>
         </nav>
         <!--cover section-->
-        <div class="w-[1170px h-[550px]">
-            <div class="bg-cover w-[1170px h-[550px]  mx-auto bg-center" style=" border-radius: 16px;
+        <div class="w-[1170px] h-[550px]">
+            <div class="bg-cover lg:w-[1170px] lg:h-[550px]  mx-auto bg-center" style=" border-radius: 16px;
             background: url(Images/1.png), lightgray 0px 0px / 100% 100% no-repeat;">
                 <div class="flex justify-between px-8 pb-8 pt-[353px]">
                     <div class="flex gap-4 ">
-                        <svg class="w-10 h-10 mt-[120px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M512 256A256 256 0 1 0 0 256a256 256 0 1 0 512 0zM271 135c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-87 87 87 87c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0L167 273c-9.4-9.4-9.4-24.6 0-33.9L271 135z"/></svg>
-    
-                  
-                        <svg class="w-10 h-10 mt-[120px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM241 377c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l87-87-87-87c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L345 239c9.4 9.4 9.4 24.6 0 33.9L241 377z"/></svg>
+                        <svg class="w-10 h-10 mt-[120px]" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                            <path
+                                d="M512 256A256 256 0 1 0 0 256a256 256 0 1 0 512 0zM271 135c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-87 87 87 87c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0L167 273c-9.4-9.4-9.4-24.6 0-33.9L271 135z" />
+                        </svg>
+
+
+                        <svg class="w-10 h-10 mt-[120px]" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                            <path
+                                d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM241 377c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l87-87-87-87c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L345 239c9.4 9.4 9.4 24.6 0 33.9L241 377z" />
+                        </svg>
                     </div>
-                    <div class="w-[566px] h-[154px] bg-[#131318]  text-white py-8 px-8 space-y-4 rounded-2xl">
+                    <div class="w-[566px] h-[154px] bg-[#131318] text-white py-8 px-8 space-y-4 rounded-2xl">
                         <h3 class="w-[400px] text-2xl font-extrabold">Meet all the heroes from the field</h3>
-                        <p class="w-[502px] text-[16px] font-medium">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis,quia!</p>
+                        <p class="w-[502px] text-[16px] font-medium">Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Quis,quia!</p>
                     </div>
+
                 </div>
             </div>
         </div>
 
     </header>
-    <main>
+    <main class=" mx-[135px]">
+        <hr class="background: rgba(19, 19, 24, 0.20) mt-12 w-[1170px] mb-8">
+        <div class="justify-center items-center ">
+            <h2 class="text-4xl px-[349px]  font-extrabold pb-6 text-[#131318]">Professional Hockeys Club</h2>
+            <p class="text-[16px] px-[281px] font-medium text-[#5d5d64]">Dit amet consectetur. Condimentum dignissim
+                adipiscing aliquam turpis placerat dolor. Purus urna in sit
+                nullam proin. </p>
+        </div>
+        <hr class="background: rgba(19, 19, 24, 0.20) mt-8 mb-12 w-[1170px] mb-8">
+        <!--progress section-->
+        <div class="flex justify-between justify-center items-center mx-auto ">
+            <div class="item-center justify-center  ">
 
-    </main>
-    <footer>
+                <div class="radial-progress text-[#FF4240] justify-center size-32 rotate-[160deg] items-center ml-12 text-primary"
+                    style="--value:87;" role="progressbar"><span
+                        class="text-[#131318] font-extrabold text-xl rotate-[-160deg] ">87%</span></div>
 
-    </footer>
+                <h3 class="text-black w-[133px] pt-6 pb-4 ml-12 font-semibold text-xl">Prayer Facility</h3>
+
+                <p class="text-[#5d5d64] w-[250px] font-normal text-[16px] mx-auto ">Amet consectetur. Condimentum
+                    dignissim
+                    adipiscing .</p>
+            </div>
+            <div class="item-center justify-center  ">
+
+                <div class="radial-progress text-[#49D293 ]  justify-center size-32 rotate-[160deg] items-center ml-12 text-primary"
+                    style="--value:95;" role="progressbar"><span
+                        class="text-[#131318] font-extrabold text-xl rotate-[-160deg] ">95%</span></div>
+
+                <h3 class="text-black w-[185px] pt-6 pb-4 ml-6 font-semibold text-xl">Experienced Coach</h3>
+
+                <p class="text-[#5d5d64] w-[250px] font-normal text-[16px] mx-auto ">Amet consectetur. Condimentum
+                    dignissim
+                    adipiscing .</p>
+            </div>
+            <div class="item-center justify-center  ">
+
+                <div class="radial-progress text-[#f1ba41] justify-center size-32 rotate-[160deg] items-center ml-12 text-primary"
+                    style="--value:90;" role="progressbar"><span
+                        class="text-[#131318] font-extrabold text-xl rotate-[-160deg] ">90%</span></div>
+
+                <h3 class="text-black w-[133px] pt-6 pb-4 ml-12 font-semibold text-xl">Senior Player </h3>
+
+                <p class="text-[#5d5d64] w-[250px] font-normal text-[16px] mx-auto ">Amet consectetur. Condimentum
+                    dignissim
+                    adipiscing .</p>
+            </div>
+            <div class="item-center justify-center  ">
+
+                <div class="radial-progress text-[#4C8DF1] justify-center size-32 rotate-[160deg] items-center ml-12 text-primary"
+                    style="--value:80;" role="progressbar"><span
+                        class="text-[#131318] font-extrabold text-xl rotate-[-160deg] ">80%</span></div>
+
+                <h3 class="text-black w-[155px] pt-6 pb-4 ml-10 font-semibold text-xl">Training Ground</h3>
+
+                <p class="text-[#5d5d64] w-[250px] font-normal text-[16px] mx-auto ">Amet consectetur. Condimentum
+                    dignissim
+                    adipiscing .</p>
+            </div>
+
+        </div>
+
+        <hr class="background: rgba(19, 19, 24, 0.20) mt-24 mb-12 w-[1170px] mb-8">
+
+        <!--Program Sections-->
+        <h2 class="text-[#131318] w-[318px] mx-auto font-extrabold text-4xl">Program Sections</h2>
+        <p class="w-[607px] text-[#5d5d64] pt-6 mx-auto font-medium text-[16px]">Dit amet consectetur. Condimentum
+            dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+
+        <hr class="background: rgba(19, 19, 24, 0.20) mt-24 mb-12 w-[1170px] mb-8">
+
+        <div class="">
+            <div class="flex gap-6">
+
+                <div class="w-[573px] h-[338px] mx-auto" style=" border-radius: 16px;
+                background: url(Images/2.png), rgba(19, 19, 24, 0.50);">
+
+                    <h3 class="text-white font-extrabold text-[28px] w-[255px] pt-[95px]  pb-4 pl-10">Junior Program
+                    </h3>
+                    <p class="text-white text-[16px] font-medium w-[550px] px-10 pb-6">Dolor sit amet consectetur. Ut
+                        urna diam
+                        quis sagittis. Elit elit
+                        enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue
+                        sed et in.</p>
+                    <button
+                        class="btn btn-primary text-white ml-10 mb-10 border-none bg-[#FF4240] rounded-lg w-[180px] h-[47px] px-auto py-auto font-bold text-xl">Register
+                        Now!</button>
+                </div>
+                <div class="w-[573px] h-[338px] mx-auto" style=" border-radius: 16px;
+                background: url(Images/3.png),rgba(19, 19, 24, 0.50);">
+
+                    <h3 class="text-white font-extrabold text-[28px] w-[300px] pt-[95px]  pb-4 pl-10">Teenager Program
+                    </h3>
+                    <p class="text-white text-[16px] font-medium w-[550px] px-10 pb-6">Dolor sit amet consectetur. Ut
+                        urna diam
+                        quis sagittis. Elit elit
+                        enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue
+                        sed et in.</p>
+                    <button
+                        class="btn btn-primary text-white ml-10 mb-10 border-none bg-[#FF4240] rounded-lg w-[180px] h-[47px] px-auto py-auto font-bold text-xl">Register
+                        Now!</button>
+                </div>
+            </div>
+            <div class="w-[1170px] h-[450px] mt-6 mx-auto" style=" border-radius: 16px;
+            background: url(Images/4.png), rgba(19, 19, 24, 0.50);">
+
+                <h3 class="text-white font-extrabold text-[28px] w-[340px] pt-[207px]  pb-4 pl-10">Professional Program
+                </h3>
+                <p class="text-white text-[16px] font-medium w-[550px] px-10 pb-6">Dolor sit amet consectetur. Ut urna
+                    diam
+                    quis sagittis. Elit elit
+                    enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue
+                    sed et in.</p>
+                <button
+                    class="btn btn-primary text-white ml-10 mb-10 border-none bg-[#FF4240] rounded-lg w-[180px] h-[47px] px-auto py-auto font-bold text-xl">Register
+                    Now!</button>
+                   
+            </div>
+            <hr class="background: rgba(19, 19, 24, 0.20) mt-24 mb-12 w-[1170px] mb-8">
+            <h2 class="text-[#131318] w-[319px] mx-auto font-extrabold text-4xl">Our New Products</h2>
+            <p class="w-[607px] text-[#5d5d64] pt-6 mx-auto font-medium text-[16px]">Dit amet consectetur. Condimentum
+                dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+                <hr class="background: rgba(19, 19, 24, 0.20) mt-8 mb-12 w-[1170px] mb-8">
+            <footer>
+
+            </footer>
 
 </body>
 
