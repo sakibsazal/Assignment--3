@@ -46,32 +46,51 @@
         </nav>
         <!--cover section-->
         <div class="w-[1170px] h-[550px]">
-            <div class="bg-cover lg:w-[1170px] lg:h-[550px]  mx-auto bg-center" style=" border-radius: 16px;
-            background: url(Images/1.png), lightgray 0px 0px / 100% 100% no-repeat;">
-                <div class="flex justify-between px-8 pb-8 pt-[353px]">
-                    <div class="flex gap-4 ">
-                        <svg class="w-10 h-10 mt-[120px]" xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                            <path
-                                d="M512 256A256 256 0 1 0 0 256a256 256 0 1 0 512 0zM271 135c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-87 87 87 87c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0L167 273c-9.4-9.4-9.4-24.6 0-33.9L271 135z" />
-                        </svg>
-
-
-                        <svg class="w-10 h-10 mt-[120px]" xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                            <path
-                                d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM241 377c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l87-87-87-87c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L345 239c9.4 9.4 9.4 24.6 0 33.9L241 377z" />
-                        </svg>
+            
+            <div class="carousel w-full lg:w-[1170px] lg:h-[550px] ">
+                <div id="slide1" class="carousel-item relative w-full">
+                    <img src="Images/1.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide3" class="btn btn-circle">❮</a>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
                     </div>
-                    <div class="w-[566px] h-[154px] bg-[#131318] text-white py-8 px-8 space-y-4 rounded-2xl">
+                    <div class="absolute  transform  ml-[557px] mt-[335px]
+                    w-[566px] h-[154px] bg-[#131318] text-white py-8 px-8 space-y-4 rounded-2xl">
                         <h3 class="w-[400px] text-2xl font-extrabold">Meet all the heroes from the field</h3>
                         <p class="w-[502px] text-[16px] font-medium">Lorem ipsum dolor sit amet consectetur adipisicing
                             elit. Quis,quia!</p>
                     </div>
-
                 </div>
+                <div id="slide2" class="carousel-item relative w-full">
+                    <img src="https://daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn btn-circle">❮</a>
+                        <a href="#slide3" class="btn btn-circle">❯</a>
+                    </div>
+                    <div class="absolute  transform ml-[557px] mt-[335px]
+                    w-[566px] h-[154px] bg-[#131318] text-white py-8 px-8 space-y-4 rounded-2xl">
+                        <h3 class="w-[400px] text-2xl font-extrabold">Meet all the heroes from the field</h3>
+                        <p class="w-[502px] text-[16px] font-medium">Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Quis,quia!</p>
+                    </div>
+                </div>
+                <div id="slide3" class="carousel-item relative w-full">
+                    <img src="https://daisyui.com/images/stock/photo-1414694762283-acccc27bca85.jpg" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" class="btn btn-circle">❮</a>
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                    </div>
+                    <div class="absolute  transform ml-[557px] mt-[335px]
+                    w-[566px] h-[154px] bg-[#131318] text-white py-8 px-8 space-y-4 rounded-2xl">
+                        <h3 class="w-[400px] text-2xl font-extrabold">Meet all the heroes from the field</h3>
+                        <p class="w-[502px] text-[16px] font-medium">Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Quis,quia!</p>
+                    </div>
+                </div>
+
             </div>
-        </div>
+         </div>
+        
 
     </header>
     <main class=" mx-[135px]">
@@ -149,7 +168,7 @@
             <div class="flex gap-6">
 
                 <div class="w-[573px] h-[338px] mx-auto" style=" border-radius: 16px;
-                background: url(Images/2.png), rgba(19, 19, 24, 0.50);">
+                background:url(Images/2.png),rgba(19, 19, 24, 0.50);">
 
                     <h3 class="text-white font-extrabold text-[28px] w-[255px] pt-[95px]  pb-4 pl-10">Junior Program
                     </h3>
@@ -202,7 +221,7 @@
             <hr class="background: rgba(19, 19, 24, 0.20) mt-8 mb-12 w-[1170px] ">
             <div class="flex flex-wrap gap-6">
                 <!--card-1-->
-                <div class="card card-side bg-base-100 gap-6 w-[573px] shadow-xl">
+                <div class="card card-side bg-base-100 border-2 border-gray-200 gap-6 w-[573px] shadow-xl">
                     <div class="w-[200px] h-[172px] mt-6 ml-6 mb-[22px] mr-8" style="border-radius: 12px;
                     background: url(Images/5.png), lightgray 50% / cover no-repeat;">
 
@@ -246,7 +265,7 @@
                     </div>
                 </div>
                 <!--card-2-->
-                <div class="card card-side bg-base-100 gap-6 w-[573px] shadow-xl">
+                <div class="card card-side bg-base-100 border-2 border-gray-200 gap-6 w-[573px] shadow-xl">
                     <div class="w-[200px] h-[172px] mt-6 ml-6 mb-[22px] mr-8" style="border-radius: 12px;
                     background: url(Images/6.png), lightgray 50% / cover no-repeat;">
 
@@ -290,7 +309,7 @@
                     </div>
                 </div>
                 <!--card-3-->
-                <div class="card card-side bg-base-100 gap-6 w-[573px] shadow-xl">
+                <div class="card card-side bg-base-100 border-2 border-gray-200 gap-6 w-[573px] shadow-xl">
                     <div class="w-[200px] h-[172px] mt-6 ml-6 mb-[22px] mr-8" style="border-radius: 12px;
                     background: url(Images/7.png), lightgray 50% / cover no-repeat;">
 
@@ -334,7 +353,7 @@
                     </div>
                 </div>
                 <!--card-4-->
-                <div class="card card-side bg-base-100 gap-6 w-[573px] shadow-xl">
+                <div class="card card-side bg-base-100 border-2 border-gray-200 gap-6 w-[573px] shadow-xl">
                     <div class="w-[200px] h-[172px] mt-6 ml-6 mb-[22px] mr-8" style="border-radius: 12px;
                     background: url(Images/8.png), lightgray 50% / cover no-repeat;">
 
@@ -378,7 +397,7 @@
                     </div>
                 </div>
                 <!--card-5-->
-                <div class="card card-side bg-base-100 gap-6 w-[573px] shadow-xl">
+                <div class="card card-side bg-base-100 border-2 border-gray-200 gap-6 w-[573px] shadow-xl">
                     <div class="w-[200px] h-[172px] mt-6 ml-6 mb-[22px] mr-8" style="border-radius: 12px;
                     background: url(Images/9.png), lightgray 50% / cover no-repeat;">
 
@@ -422,7 +441,7 @@
                     </div>
                 </div>
                 <!--card-6-->
-                <div class="card card-side bg-base-100 gap-6 w-[573px] shadow-xl">
+                <div class="card card-side bg-base-100 border-2 border-gray-200 gap-6 w-[573px] shadow-xl">
                     <div class="w-[200px] h-[172px] mt-6 ml-6 mb-[22px] mr-8" style="border-radius: 12px;
                     background: url(Images/10.png), lightgray 50% / cover no-repeat;">
 
@@ -477,7 +496,7 @@
 
             <hr class="background: rgba(19, 19, 24, 0.20) mt-6 mb-8 w-[1170px] ">
 
-            <div class="w-[1170px] card card-side bg-base-100 gap-16 shadow-xl">
+            <div class="w-[1170px] border-2 border-gray-200 card card-side bg-base-100 gap-16 shadow-xl">
                 <div class="w-100% w-[441px] h-[470px]  mt-8 ml-8 mb-8 -mr-24 justify-center items-center" style="border-radius: 16px;
         background: url(Images/11.png), lightgray 50% / cover no-repeat;">
                 </div>
@@ -548,13 +567,170 @@
 
             </div>
             <hr class="background: rgba(19, 19, 24, 0.20) mt-24 mb-8 w-[1170px] ">
+
+            <!--get in tuch section-->
             <h2 class="text-[#131318] w-[318px] mx-auto font-extrabold text-4xl">Get In Touch</h2>
             <p class="w-[607px] text-[#5d5d64] pt-6 mx-auto font-medium text-[16px]">Dit amet consectetur. Condimentum
                 dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
 
             <hr class="background: rgba(19, 19, 24, 0.20) mt-6 mb-8 w-[1170px] ">
+
+
+            <div class="w-[1170px] h-[796px]  mx-0 flex">
+
+                <div class="w-[474px] h-[796px] rounded-2xl border-gray-200 mb-12
+    border-2">
+                    <div class="w-[374px] h-[216px] rounded-2xl mt-[50px] bg-[#BCED6D1A] mx-[50px]">
+                        <div class="pl-8 pt-8 pb-12 ">
+                            <img class="w-12 h-12 mb-6" src="Images/Group 1171275317.png" alt="">
+                            <h4 class="text-[16px] text-[#5d5d64] font-normal "> Phone Number : <br>
+                                <span class="text-[#131318] font-extrabold text-[18px]">(+62) 123-321-543</span>
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="w-[374px] h-[216px] rounded-2xl my-6 bg-[#FDDD5F1A] mx-[50px]">
+                        <div class="pl-8 pt-8 pb-12 ">
+                            <img class="w-12 h-12 mb-6" src="Images/Group 1171275318.png" alt="">
+                            <h4 class="text-[16px] text-[#5d5d64] font-normal "> Email : <br>
+                                <span class="text-[#131318] font-extrabold text-[18px]">hockeys@support.com
+
+                                </span>
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="w-[374px] h-[216px] rounded-2xl mb-[50px] bg-[#629CF31A] mx-[50px]">
+                        <div class="pl-8 pt-8 pb-12 ">
+                            <img class="w-12 h-12 mb-6" src="Images/Group 1171275321.png" alt="">
+                            <h4 class="text-[16px] text-[#5d5d64] font-normal "> Location : <br>
+                                <span class="text-[#131318] font-extrabold text-[18px]">152/1 Mohakhali Wireless
+                                    Gate</span>
+                            </h4>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+                <div class="flex pl-6 flex-wrap gap-6">
+                    <div>
+                        <h4 class="text-[#131318] font-bold text-xl mb-4">Your Name</h4>
+                        <input class="w-[324px] h-[64px] rounded-xl pl-5 bg-[#13131808]" type="text"
+                            placeholder=" your full name">
+                    </div>
+                    <div>
+                        <h4 class="text-[#131318] font-bold text-xl mb-4">Your Email</h4>
+                        <input class="w-[324px] h-[64px] rounded-xl pl-5 bg-[#13131808]" type="email"
+                            placeholder="Enter your email">
+                    </div>
+                    <div>
+                        <h4 class="text-[#131318] font-bold text-xl mb-4">Subject</h4>
+                        <input class="w-[324px] h-[64px] rounded-xl pl-5 bg-[#13131808]" type="text"
+                            placeholder=" Enter your subject">
+                    </div>
+                    <div>
+                        <h4 class="text-[#131318] font-bold text-xl mb-4">Phone Number</h4>
+                        <input class="w-[324px] h-[64px] rounded-xl pl-5 bg-[#13131808]" type="number"
+                            placeholder="Enter your phone number">
+                    </div>
+                    <div>
+                        <h4 class="text-[#131318] font-bold text-xl mb-4">Message</h4>
+                        <input class="w-[672px] h-[370px] rounded-xl pl-5 pb-72 bg-[#13131808]" type="text"
+                            placeholder="Write your message">
+                    </div>
+                    <button
+                        class="btn btn-primary border-none text-white bg-[#FF4240] rounded-lg w-[672px] h-14 px-auto py-auto font-bold text-xl">Send
+                        Message
+                    </button>
+                </div>
+
+            </div>
+
+            <div class="w-[1170px] h-[150px] mt-12 mb-24 bg-[#13131808] rounded-xl">
+                <h4 class="text-[#131318] pt-8 pb-6 ml-[510px]  font-extrabold text-2xl">Social Media</h4>
+                <div class="flex gap-2 items-center justify-center ">
+                    <div class="w-6 h-6">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                            <path
+                                d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z" />
+                        </svg>
+                    </div>
+                    <div class="w-6 h-6 ">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                            <path
+                                d="M459.4 151.7c.3 4.5 .3 9.1 .3 13.6 0 138.7-105.6 298.6-298.6 298.6-59.5 0-114.7-17.2-161.1-47.1 8.4 1 16.6 1.3 25.3 1.3 49.1 0 94.2-16.6 130.3-44.8-46.1-1-84.8-31.2-98.1-72.8 6.5 1 13 1.6 19.8 1.6 9.4 0 18.8-1.3 27.6-3.6-48.1-9.7-84.1-52-84.1-103v-1.3c14 7.8 30.2 12.7 47.4 13.3-28.3-18.8-46.8-51-46.8-87.4 0-19.5 5.2-37.4 14.3-53 51.7 63.7 129.3 105.3 216.4 109.8-1.6-7.8-2.6-15.9-2.6-24 0-57.8 46.8-104.9 104.9-104.9 30.2 0 57.5 12.7 76.7 33.1 23.7-4.5 46.5-13.3 66.6-25.3-7.8 24.4-24.4 44.8-46.1 57.8 21.1-2.3 41.6-8.1 60.4-16.2-14.3 20.8-32.2 39.3-52.6 54.3z" />
+                        </svg>
+                    </div>
+                    <div class="w-6 h-6">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                            <path
+                                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                        </svg>
+                    </div>
+                    <div class="w-6 h-6">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 496 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                            <path
+                                d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
+                        </svg>
+                    </div>
+                </div>
+
+            </div>
     </main>
-    <footer>
+
+    <footer class="footer text-white w-[1440px] h-[454px]  bg-black text-base-content">
+        <div class="my-[100px] ml-[135px]">
+            <h3 class="text-white text-[28px] font-extrabold">
+                Get In Touch
+            </h3>
+            <p class="text-[#5d5d64] text-[16px] pt-4 w-[346px] h-[78px] font-medium">Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Id, animi?</p>
+            <div class="flex gap-8">
+                <svg class="w-6 h-6 rounded-lg bg-[#7e7c7c]" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <path
+                        d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z" />
+                </svg>
+                <h6 class="text-[#5d5d64] text-[16px] font-medium">hockeys@support.com</h6>
+            </div>
+            <div class="flex gap-8">
+                <svg class="w-6 h-6 rounded-lg bg-[#7e7c7c]" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <path
+                        d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z" />
+                </svg>
+                <h6 class="text-[#5d5d64] text-[16px] font-medium">(+62) 123-321-543</h6>
+            </div>
+
+        </div>
+        <nav class="my-[100px]">
+            <header class="text-xl font-bold text-white pb-[29px]">Company</header>
+            <a class="text-[#5d5d64] text-[16px] font-medium">About us</a>
+            <a class="text-[#5d5d64] text-[16px] font-medium">Leadership</a>
+            <a class="text-[#5d5d64] text-[16px] font-medium">Careers</a>
+            <a class="text-[#5d5d64] text-[16px] font-medium">News & Article</a>
+            <a class="text-[#5d5d64] text-[16px] font-medium">Legal Notice</a>
+        </nav>
+        <nav class="my-[100px]">
+            <header class="text-xl font-bold text-white pb-[29px]">Support</header>
+            <a class="text-[#5d5d64] text-[16px] font-medium">Help Center</a>
+            <a class="text-[#5d5d64] text-[16px] font-medium"> FAQ </a>
+            <a class="text-[#5d5d64] text-[16px] font-medium">Ticket</a>
+            <a class="text-[#5d5d64] text-[16px] font-medium">Support</a>
+            <a class="text-[#5d5d64] text-[16px] font-medium"> Contact Us</a>
+        </nav>
+        <nav class="my-[100px]">
+            <header class="text-xl font-bold text-white pb-[29px]">Services</header>
+            <a class="text-[#5d5d64] text-[16px] font-medium">Academy </a>
+            <a class="text-[#5d5d64] text-[16px] font-medium">Group Lesson </a>
+            <a class="text-[#5d5d64] text-[16px] font-medium">Private Lesson</a>
+            <a class="text-[#5d5d64] text-[16px] font-medium">Hockeys for kids </a>
+            <a class="text-[#5d5d64] text-[16px] font-medium">Hockeys for Adult</a>
+        </nav>
 
     </footer>
 
