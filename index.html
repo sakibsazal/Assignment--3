@@ -17,211 +17,261 @@
     </style>
 </head>
 
-<body class="w-[1440px]">
-    <header class=" mx-[135px]">
+<body class="">
+    <header class="container mx-auto">
         <!--navbar section-->
-        <nav class="flex justify-between items-center  justify-center mx-0  my-12">
-            <div>
-                <h2 class="text-[#131318] font-extrabold  text-4xl">Hockey<span class="text-[#FF4240]">’</span>s</h2>
-            </div>
-            <div>
-                <ul class="lg:flex hidden gap-11">
-                    <li class="text-[#FF4240] text-[16px] font-bold "><a href="#">Home</a></li>
-                    <li class="text-[#424247] text-[16px] font-normal"><a href="#">About</a></li>
-                    <li class="text-[#424247] text-[16px] font-normal"><a href="#">Pages</a></li>
-                    <li class="text-[#424247] text-[16px] font-normal"><a href="#">Blog </a></li>
-                    <li class="text-[#424247] text-[16px] font-normal"><a href="#">Contact</a></li>
-                </ul>
-            </div>
-            <div class=" flex justify-center items-center gap-6">
-                <svg class="  w-6 h-6 " xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                    <path
-                        d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
-                </svg>
-                <button
-                    class="btn btn-primary border-none text-white bg-[#FF4240] rounded-lg w-36 h-14 px-auto py-auto font-bold text-xl">Get
-                    Ticket</button>
+        <nav class="lg:px-24">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-teal-50 rounded-box w-36">
+                            <li><a><span class="text-[#FF4240] font-bold">Home</span></a></li>
+                            <li><a>About</a></li>
+                            <li><a>Pages</a></li>
+                            <li><a>Blog</a></li>
+                            <li><a>Contact</a></li>
+                        </ul>
+                    </div> <a class="btn btn-ghost text-4xl font-extrabold hidden lg:block">
+                        Hockey<span class="text-[#FF4240]">’</span>s
+                    </a>
+                </div>
+                <div class="navbar-center ">
+                    <a class="btn btn-ghost text-4xl font-extrabold block lg:hidden">
+                        Hockey<span class="text-[#FF4240]">’</span>s
+                    </a>
+                    <ul class="hidden lg:flex menu menu-horizontal  px-1">
+                        <li><a><span class="text-[#FF4240] font-bold">Home</span></a></li>
+                        <li><a>About</a></li>
+                        <li><a>Pages</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+
+                </div>
+                <div class="navbar-end">
+                    <div class="flex pr-4 hidden lg:block">
+                        <img src="Images/Frame (1).svg" alt="">
+                    </div>
+                    <a class="btn bg-[#FF4240] text-white">Get Ticket</a>
+                </div>
             </div>
         </nav>
-        <!--cover section-->
-        <div class="w-[1170px] h-[550px]">
-            
-            <div class="carousel w-full lg:w-[1170px] lg:h-[550px] ">
-                <div id="slide1" class="carousel-item relative w-full">
-                    <img src="Images/1.png" class="w-full" />
-                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                        <a href="#slide3" class="btn btn-circle">❮</a>
-                        <a href="#slide2" class="btn btn-circle">❯</a>
-                    </div>
-                    <div class="absolute  transform  ml-[557px] mt-[335px]
-                    w-[566px] h-[154px] bg-[#131318] text-white py-8 px-8 space-y-4 rounded-2xl">
-                        <h3 class="w-[400px] text-2xl font-extrabold">Meet all the heroes from the field</h3>
-                        <p class="w-[502px] text-[16px] font-medium">Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Quis,quia!</p>
-                    </div>
-                </div>
-                <div id="slide2" class="carousel-item relative w-full">
-                    <img src="https://daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg" class="w-full" />
-                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                        <a href="#slide1" class="btn btn-circle">❮</a>
-                        <a href="#slide3" class="btn btn-circle">❯</a>
-                    </div>
-                    <div class="absolute  transform ml-[557px] mt-[335px]
-                    w-[566px] h-[154px] bg-[#131318] text-white py-8 px-8 space-y-4 rounded-2xl">
-                        <h3 class="w-[400px] text-2xl font-extrabold">Meet all the heroes from the field</h3>
-                        <p class="w-[502px] text-[16px] font-medium">Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Quis,quia!</p>
-                    </div>
-                </div>
-                <div id="slide3" class="carousel-item relative w-full">
-                    <img src="https://daisyui.com/images/stock/photo-1414694762283-acccc27bca85.jpg" class="w-full" />
-                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                        <a href="#slide2" class="btn btn-circle">❮</a>
-                        <a href="#slide1" class="btn btn-circle">❯</a>
-                    </div>
-                    <div class="absolute  transform ml-[557px] mt-[335px]
-                    w-[566px] h-[154px] bg-[#131318] text-white py-8 px-8 space-y-4 rounded-2xl">
-                        <h3 class="w-[400px] text-2xl font-extrabold">Meet all the heroes from the field</h3>
-                        <p class="w-[502px] text-[16px] font-medium">Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Quis,quia!</p>
-                    </div>
-                </div>
 
+        <!--cover section-->
+        <section class="my-20 lg:px-24 px-8">
+            <div class="relative">
+                <div class="carousel w-full ">
+                    <!--cover 1-->
+                    <div id="slide1" class="carousel-item relative w-full">
+                        <img src="Images/1.png" class="w-full rounded-2xl" />
+                        <div
+                            class="absolute flex justify-between transform -translate-y-1/2  left-16 right-16  lg:left-5 lg:right-5 top-1/2">
+                            <a href="#slide3" class="btn text-white bg-black btn-circle">❮</a>
+                            <a href="#slide2" class="btn  text-white bg-black btn-circle">❯</a>
+                        </div>
+                    </div>
+                    <!--cover 2-->
+                    <div id="slide2" class="carousel-item relative w-full">
+                        <img src="Images/cover-2.jpg" class="w-full rounded-2xl" />
+                        <div
+                            class="absolute flex justify-between transform -translate-y-1/2 left-16 right-16 lg:left-5 lg:right-5 top-1/2">
+                            <a href="#slide1" class="btn  text-white bg-black  btn-circle">❮</a>
+                            <a href="#slide3" class="btn  text-white bg-black  btn-circle">❯</a>
+                        </div>
+                    </div>
+                    <!--cover 3-->
+                    <div id="slide3" class="carousel-item relative w-full ">
+                        <img src="Images/cover-3.jpg" class="w-full rounded-2xl" />
+                        <div
+                            class="absolute flex justify-between transform -translate-y-1/2 left-16 right-16  lg:left-5 lg:right-5 top-1/2">
+                            <a href="#slide2" class="btn  text-white bg-black  btn-circle">❮</a>
+                            <a href="#slide1" class="btn  text-white bg-black  btn-circle">❯</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div
+                    class="mt-6 absolute bg-black w-94 lg:w-[500px] space-y-3 rounded-xl  h-52 lg:h-36 flex flex-col p-6 lg:px-8 lg:py-7 flex flex-col lg:right-10 lg:bottom-10">
+                    <h5 class=" lg:text-xl font-extrabold 
+                    text-white">Meet all the heroes from the field</h5>
+                    <p class="text-white text-opacity-80">Preston Hockey Club Official. 227 likes · 40 talking about
+                        this. Est 1903, Home to 7 mens, 3 Ladies and 3 Junior Teams</p>
+                </div>
             </div>
-         </div>
-        
+        </section>
 
     </header>
-    <main class=" mx-[135px]">
-        <hr class="background: rgba(19, 19, 24, 0.20) mt-24 w-[1170px] mb-8 ">
-        <div class="justify-center items-center ">
-            <h2 class="text-4xl px-[349px]  font-extrabold pb-6 text-[#131318]">Professional Hockeys Club</h2>
-            <p class="text-[16px] px-[281px] font-medium text-[#5d5d64]">Dit amet consectetur. Condimentum dignissim
-                adipiscing aliquam turpis placerat dolor. Purus urna in sit
-                nullam proin. </p>
-        </div>
-        <hr class="background: rgba(19, 19, 24, 0.20) mt-8 mb-8 w-[1170px] ">
-        <!--progress section-->
-        <div class="flex justify-between justify-center items-center mx-auto ">
-            <div class="item-center justify-center  ">
 
-                <div class="radial-progress text-[#FF4240] justify-center size-32 rotate-[160deg] items-center ml-12 text-primary"
-                    style="--value:87;" role="progressbar"><span
-                        class="text-[#131318] font-extrabold text-xl rotate-[-160deg] ">87%</span></div>
-
-                <h3 class="text-black w-[133px] pt-6 pb-4 ml-12 font-semibold text-xl">Prayer Facility</h3>
-
-                <p class="text-[#5d5d64] w-[250px] font-normal text-[16px] mx-auto ">Amet consectetur. Condimentum
-                    dignissim
-                    adipiscing .</p>
+    <!--Main section-->
+    <main class="container mx-auto">
+        <section class="lg:my-10 lg:px-24 px-8">
+            <div class="mt-64 lg:mt-10 lg:space-y-6 text-center">
+                <hr class="background: rgba(19, 19, 24, 0.20) mt-24  mb-8 ">
+                <div class="justify-center items-center ">
+                    <h2 class="text-lg lg:text-4xl  font-extrabold pb-6 ">Professional Hockeys Club</h2>
+                    <p class="text-[16px]  lg:w-[500px] mx-auto text-opacity-80 font-medium ">Dit amet consectetur.
+                        Condimentum dignissim
+                        adipiscing aliquam turpis placerat dolor. Purus urna in sit
+                        nullam proin. </p>
+                </div>
+                <hr class="background: rgba(19, 19, 24, 0.20) mt-8 mb-8 ">
             </div>
-            <div class="item-center justify-center  ">
+            <!--progress section-->
+            <div class=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-1 lg:gap-6">
+                <!--progress 1-->
+                <div class=" lg:my-24 my-2 relative flex flex-col justify-center items-center text-center ">
 
-                <div class="radial-progress text-[#49D293 ]  justify-center size-32 rotate-[160deg] items-center ml-12 text-primary"
-                    style="--value:95;" role="progressbar"><span
-                        class="text-[#131318] font-extrabold text-xl rotate-[-160deg] ">95%</span></div>
+                    <div class="radial-progress text-[#FF4240] justify-center size-32 rotate-[160deg] items-center  text-primary"
+                        style="--value:87;" role="progressbar"><span
+                            class="text-[#131318] font-extrabold text-xl rotate-[-160deg] ">87%</span>
+                    </div>
+                    <div class="space-y-4 mt-4">
+                        <h3 class="text-black  font-semibold text-xl">Prayer Facility</h3>
 
-                <h3 class="text-black w-[185px] pt-6 pb-4 ml-6 font-semibold text-xl">Experienced Coach</h3>
+                        <p class="text-[#5d5d64]  font-normal text-[16px]  ">Amet consectetur. Condimentum
+                            dignissim
+                            adipiscing .</p>
+                    </div>
+                </div>
+                <!--progress 2-->
+                <div class=" lg:my-24 my-2 relative flex flex-col justify-center items-center text-center ">
 
-                <p class="text-[#5d5d64] w-[250px] font-normal text-[16px] mx-auto ">Amet consectetur. Condimentum
-                    dignissim
-                    adipiscing .</p>
+                    <div class="radial-progress text-[49D293] justify-center size-32 rotate-[160deg] items-center  text-primary"
+                        style="--value:95;" role="progressbar"><span
+                            class="text-[#131318] font-extrabold text-xl rotate-[-160deg] ">95%</span>
+                    </div>
+                    <div class="space-y-4 mt-4">
+                        <h3 class="text-black  font-semibold text-xl">Experienced Coach</h3>
+
+                        <p class="text-[#5d5d64]  font-normal text-[16px]  ">Amet consectetur. Condimentum
+                            dignissim
+                            adipiscing .</p>
+                    </div>
+                </div>
+
+
+                <!--progress 3-->
+                <div class=" lg:my-24 my-2 relative flex flex-col justify-center items-center text-center ">
+
+                    <div class="radial-progress text-[#f1ba41] justify-center size-32 rotate-[160deg] items-center  text-primary"
+                        style="--value:90;" role="progressbar"><span
+                            class="text-[#131318] font-extrabold text-xl rotate-[-160deg] ">90%</span>
+                    </div>
+                    <div class="space-y-4 mt-4">
+                        <h3 class="text-black  font-semibold text-xl">Senior Player</h3>
+
+                        <p class="text-[#5d5d64]  font-normal text-[16px]  ">Amet consectetur. Condimentum
+                            dignissim
+                            adipiscing .</p>
+                    </div>
+                </div>
+
+                <!--progress 4-->
+                <div class=" lg:my-24 my-2 relative flex flex-col justify-center items-center text-center ">
+
+                    <div class="radial-progress text-[#4C8DF1] justify-center size-32 rotate-[160deg] items-center  text-primary"
+                        style="--value:80;" role="progressbar"><span
+                            class="text-[#131318] font-extrabold text-xl rotate-[-160deg] ">80%</span>
+                    </div>
+                    <div class="space-y-4 mt-4">
+                        <h3 class="text-black  font-semibold text-xl">Training Ground</h3>
+
+                        <p class="text-[#5d5d64]  font-normal text-[16px]  ">Amet consectetur. Condimentum
+                            dignissim
+                            adipiscing .</p>
+                    </div>
+                </div>
+
             </div>
-            <div class="item-center justify-center  ">
 
-                <div class="radial-progress text-[#f1ba41] justify-center size-32 rotate-[160deg] items-center ml-12 text-primary"
-                    style="--value:90;" role="progressbar"><span
-                        class="text-[#131318] font-extrabold text-xl rotate-[-160deg] ">90%</span></div>
-
-                <h3 class="text-black w-[133px] pt-6 pb-4 ml-12 font-semibold text-xl">Senior Player </h3>
-
-                <p class="text-[#5d5d64] w-[250px] font-normal text-[16px] mx-auto ">Amet consectetur. Condimentum
-                    dignissim
-                    adipiscing .</p>
-            </div>
-            <div class="item-center justify-center  ">
-
-                <div class="radial-progress text-[#4C8DF1] justify-center size-32 rotate-[160deg] items-center ml-12 text-primary"
-                    style="--value:80;" role="progressbar"><span
-                        class="text-[#131318] font-extrabold text-xl rotate-[-160deg] ">80%</span></div>
-
-                <h3 class="text-black w-[155px] pt-6 pb-4 ml-10 font-semibold text-xl">Training Ground</h3>
-
-                <p class="text-[#5d5d64] w-[250px] font-normal text-[16px] mx-auto ">Amet consectetur. Condimentum
-                    dignissim
-                    adipiscing .</p>
-            </div>
-
-        </div>
-
-        <hr class="background: rgba(19, 19, 24, 0.20) mt-24 mb-8 w-[1170px] ">
-
+            <hr class="background: rgba(19, 19, 24, 0.20) mt-24 mb-8 ">
+        </section>
         <!--Program Sections-->
-        <h2 class="text-[#131318] w-[318px] mx-auto font-extrabold text-4xl">Program Sections</h2>
-        <p class="w-[607px] text-[#5d5d64] pt-6 mx-auto font-medium text-[16px]">Dit amet consectetur. Condimentum
-            dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+        <section class="lg:my-10 lg:px-24 px-8">
+            <div class=" mt-8 lg:space-y-6 text-center">
+                <h2 class=" mx-auto text-lg  font-extrabold lg:text-4xl">Program Sections</h2>
+                <p class="text-[16px]  lg:w-[500px] mx-auto text-opacity-80 font-medium ">Dit amet consectetur.
+                    Condimentum
+                    dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
 
-        <hr class="background: rgba(19, 19, 24, 0.20) mt-8 mb-12 w-[1170px] ">
-
-        <div class="">
-            <div class="flex gap-6">
-
-                <div class="w-[573px] h-[338px] mx-auto" style=" border-radius: 16px;
-                background:url(Images/2.png),rgba(19, 19, 24, 0.50);">
-
-                    <h3 class="text-white font-extrabold text-[28px] w-[255px] pt-[95px]  pb-4 pl-10">Junior Program
-                    </h3>
-                    <p class="text-white text-[16px] font-medium w-[550px] px-10 pb-6">Dolor sit amet consectetur. Ut
-                        urna diam
-                        quis sagittis. Elit elit
-                        enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue
-                        sed et in.</p>
-                    <button
-                        class="btn btn-primary text-white ml-10 mb-10 border-none bg-[#FF4240] rounded-lg w-[180px] h-[47px] px-auto py-auto font-bold text-xl">Register
-                        Now!</button>
-                </div>
-                <div class="w-[573px] h-[338px] mx-auto" style=" border-radius: 16px;
-                background: url(Images/3.png),rgba(19, 19, 24, 0.50);">
-
-                    <h3 class="text-white font-extrabold text-[28px] w-[300px] pt-[95px]  pb-4 pl-10">Teenager Program
-                    </h3>
-                    <p class="text-white text-[16px] font-medium w-[550px] px-10 pb-6">Dolor sit amet consectetur. Ut
-                        urna diam
-                        quis sagittis. Elit elit
-                        enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue
-                        sed et in.</p>
-                    <button
-                        class="btn btn-primary text-white ml-10 mb-10 border-none bg-[#FF4240] rounded-lg w-[180px] h-[47px] px-auto py-auto font-bold text-xl">Register
-                        Now!</button>
-                </div>
+                <hr class="background: rgba(19, 19, 24, 0.20) mt-8 mb-12  ">
             </div>
-            <div class="w-[1170px] h-[450px] mt-6 mx-auto" style=" border-radius: 16px;
-            background: url(Images/4.png), rgba(19, 19, 24, 0.50);">
+            <div class="">
+                <div class="lg:max-w-[1170px] grid-cols-1 lg:flex lg:mt-24 gap-6 rounded-xl  ">
+                    <!-- program images 1 -->
+                    <div class="relative  mb-4">
+                        <div class="hero lg:w-[100%] lg:h-[338px] rounded-2xl"
+                            style="background-image: url(Images/2.png);">
+                            <div class="hero-overlay  rounded-2xl bg-opacity-40"></div>
+                            <div class="hero-content text-center text-neutral-content">
+                                <div class="text-left left-10">
+                                    <h1 class="mb-5 text-3xl font-bold">Junior Program</h1>
+                                    <p class=" lg:w-[500px] mx-auto pb-4">Preston Hockey Club Official. 227 likes · 40
+                                        talking about this. Est 1903, Home to 7 mens, 3 Ladies and 3 Junior Teams</p>
+                                    <button class="btn bg-[#FF4240] text-white border-none">Register Now!</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- program images 2 -->
+                    <div class="relative ">
+                        <div class="hero  lg:w-[100%] lg:h-[338px] rounded-2xl"
+                            style="background-image: url(Images/3.png);">
+                            <div class="hero-overlay rounded-2xl bg-opacity-40"></div>
+                            <div class="hero-content text-center text-neutral-content">
+                                <div class="text-left left-10">
+                                    <h1 class="mb-5 text-3xl font-bold">Teenager Program</h1>
+                                    <p class=" lg:w-[500px] mx-auto pb-4">Preston Hockey Club Official. 227 likes · 40
+                                        talking about this. Est 1903, Home to 7 mens, 3 Ladies and 3 Junior Teams</p>
+                                    <button class="btn bg-[#FF4240] text-white border-none">Register Now!</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-                <h3 class="text-white font-extrabold text-[28px] w-[340px] pt-[207px]  pb-4 pl-10">Professional Program
-                </h3>
-                <p class="text-white text-[16px] font-medium w-[550px] px-10 pb-6">Dolor sit amet consectetur. Ut urna
-                    diam
-                    quis sagittis. Elit elit
-                    enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue
-                    sed et in.</p>
-                <button
-                    class="btn btn-primary text-white ml-10 mb-10 border-none bg-[#FF4240] rounded-lg w-[180px] h-[47px] px-auto py-auto font-bold text-xl">Register
-                    Now!</button>
+                </div>
+                <!-- program images 3 -->
+                <div class="relative my-4">
+                    <div class="hero lg:w-[100%] h-96 rounded-2xl" style="background-image: url(Images/4.png);">
+                        <div class="hero-overlay rounded-2xl bg-opacity-60"></div>
+                        <div class="hero-content text-center text-neutral-content">
+                            <div class="text-left absolute left-3 p-5">
+                                <h1 class="mb-5 text-3xl font-bold">Professional Program</h1>
+                                <p class="lg:w-[500px] mx-auto pb-4">Preston Hockey Club Official. 227 likes · 40
+                                    talking about this. Est 1903, Home to 7 mens, 3 Ladies and 3 Junior Teams</p>
+                                <button class="btn bg-[#FF4240] text-white border-none">Register Now!</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
+
+
+                <hr class="background: rgba(19, 19, 24, 0.20) mt-24 mb-8  ">
+        </section>
+
+        <!--New Products Section-->
+        <section class="lg:my-20 lg:px-24 px-8">
+            <div class=" mt-8 lg:space-y-6 text-center">
+                <h2 class=" lg:w-[319px] mx-auto font-extrabold text-4xl">Our New Products</h2>
+                <p class=" text-opacity-80 lg:w-[550px] px-4 pt-6 mx-auto font-medium text-[16px]">Dit amet consectetur.
+                    Condimentum
+                    dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+                <hr class="background: rgba(19, 19, 24, 0.20) mt-8 mb-12  ">
             </div>
-            <hr class="background: rgba(19, 19, 24, 0.20) mt-24 mb-8 w-[1170px] ">
+            <div class="mt-6 grid lg:justify-between grid-cols-1 lg:grid-cols-2 lg:gap-6">
 
-            <!--New Products Section-->
-
-            <h2 class="text-[#131318] w-[319px] mx-auto font-extrabold text-4xl">Our New Products</h2>
-            <p class="w-[607px] text-[#5d5d64] pt-6 mx-auto font-medium text-[16px]">Dit amet consectetur. Condimentum
-                dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
-            <hr class="background: rgba(19, 19, 24, 0.20) mt-8 mb-12 w-[1170px] ">
-            <div class="flex flex-wrap gap-6">
                 <!--card-1-->
-                <div class="card card-side bg-base-100 border-2 border-gray-200 gap-6 w-[573px] shadow-xl">
+                <div
+                    class="card justify-center mt-6 items-center card-side bg-base-100 border-2 border-gray-200 gap-6  shadow-xl">
                     <div class="w-[200px] h-[172px] mt-6 ml-6 mb-[22px] mr-8" style="border-radius: 12px;
                     background: url(Images/5.png), lightgray 50% / cover no-repeat;">
 
@@ -265,7 +315,8 @@
                     </div>
                 </div>
                 <!--card-2-->
-                <div class="card card-side bg-base-100 border-2 border-gray-200 gap-6 w-[573px] shadow-xl">
+                <div
+                    class="card mt-6 justify-center items-center card-side bg-base-100 border-2 border-gray-200 gap-6  shadow-xl">
                     <div class="w-[200px] h-[172px] mt-6 ml-6 mb-[22px] mr-8" style="border-radius: 12px;
                     background: url(Images/6.png), lightgray 50% / cover no-repeat;">
 
@@ -309,7 +360,8 @@
                     </div>
                 </div>
                 <!--card-3-->
-                <div class="card card-side bg-base-100 border-2 border-gray-200 gap-6 w-[573px] shadow-xl">
+                <div
+                    class="card mt-6 justify-center items-center card-side bg-base-100 border-2 border-gray-200 gap-6 shadow-xl">
                     <div class="w-[200px] h-[172px] mt-6 ml-6 mb-[22px] mr-8" style="border-radius: 12px;
                     background: url(Images/7.png), lightgray 50% / cover no-repeat;">
 
@@ -353,7 +405,8 @@
                     </div>
                 </div>
                 <!--card-4-->
-                <div class="card card-side bg-base-100 border-2 border-gray-200 gap-6 w-[573px] shadow-xl">
+                <div
+                    class="card mt-6 justify-center items-center card-side bg-base-100 border-2 border-gray-200 gap-6 shadow-xl">
                     <div class="w-[200px] h-[172px] mt-6 ml-6 mb-[22px] mr-8" style="border-radius: 12px;
                     background: url(Images/8.png), lightgray 50% / cover no-repeat;">
 
@@ -397,7 +450,8 @@
                     </div>
                 </div>
                 <!--card-5-->
-                <div class="card card-side bg-base-100 border-2 border-gray-200 gap-6 w-[573px] shadow-xl">
+                <div
+                    class="card justify-center mt-6 items-center card-side bg-base-100 border-2 border-gray-200 gap-6  shadow-xl">
                     <div class="w-[200px] h-[172px] mt-6 ml-6 mb-[22px] mr-8" style="border-radius: 12px;
                     background: url(Images/9.png), lightgray 50% / cover no-repeat;">
 
@@ -441,7 +495,8 @@
                     </div>
                 </div>
                 <!--card-6-->
-                <div class="card card-side bg-base-100 border-2 border-gray-200 gap-6 w-[573px] shadow-xl">
+                <div
+                    class="card justify-center items-center mt-6 card-side bg-base-100 border-2 border-gray-200 gap-6 shadow-xl">
                     <div class="w-[200px] h-[172px] mt-6 ml-6 mb-[22px] mr-8" style="border-radius: 12px;
                     background: url(Images/10.png), lightgray 50% / cover no-repeat;">
 
@@ -487,168 +542,174 @@
             </div>
 
 
-            <hr class="background: rgba(19, 19, 24, 0.20) mt-24 mb-8 w-[1170px] ">
-
-            <!--Clients Question Sections-->
-            <h2 class="text-[#131318] w-[318px] mx-auto font-extrabold text-4xl">Clients Question</h2>
-            <p class="w-[607px] text-[#5d5d64] pt-6 mx-auto font-medium text-[16px]">Dit amet consectetur. Condimentum
-                dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
-
-            <hr class="background: rgba(19, 19, 24, 0.20) mt-6 mb-8 w-[1170px] ">
-
-            <div class="w-[1170px] border-2 border-gray-200 card card-side bg-base-100 gap-16 shadow-xl">
-                <div class="w-100% w-[441px] h-[470px]  mt-8 ml-8 mb-8 -mr-24 justify-center items-center" style="border-radius: 16px;
-        background: url(Images/11.png), lightgray 50% / cover no-repeat;">
-                </div>
-
-                <div class="card-body ml-10 ">
-
-                    <div class="collapse collapse-plus ">
-                        <input type="radio" name="my-accordion-3" checked="checked" />
-                        <div class="collapse-title text-xl font-bold">
-                            Our Equipment
-                        </div>
-                        <div class="collapse-content">
-                            <p class="text-[#5d5d64]  font-normal text-[16px]">Dolor sit amet consectetur. Ut urna diam
-                                quis sagittis. Elit elit enim sagittis turpis in magna.</p>
-                        </div>
-                    </div>
-                    <hr class="background: rgba(19, 19, 24, 0.20)  w-[617px] ">
-                    <div class="collapse collapse-plus ">
-                        <input type="radio" name="my-accordion-3" />
-                        <div class="collapse-title text-xl font-bold">
-                            Hockey Training
-                        </div>
-                        <div class="collapse-content">
-                            <p>hello</p>
-                        </div>
-                    </div>
-                    <hr class="background: rgba(19, 19, 24, 0.20) w-[617px]">
-                    <div class="collapse collapse-plus ">
-                        <input type="radio" name="my-accordion-3" />
-                        <div class="collapse-title text-xl font-bold">
-                            Private Lessons
-                        </div>
-                        <div class="collapse-content">
-                            <p>hello</p>
-                        </div>
-                    </div>
-                    <hr class="background: rgba(19, 19, 24, 0.20)  w-[617px]">
-                    <div class="collapse collapse-plus ">
-                        <input type="radio" name="my-accordion-3" checked="checked" />
-                        <div class="collapse-title text-xl font-bold">
-                            Ski Touring
-                        </div>
-                        <div class="collapse-content">
-                            <p>hello</p>
-                        </div>
-                    </div>
-                    <hr class="background: rgba(19, 19, 24, 0.20)  w-[617px] ">
-                    <div class="collapse collapse-plus">
-                        <input type="radio" name="my-accordion-3" />
-                        <div class="collapse-title text-xl font-bold">
-                            Booking
-                        </div>
-                        <div class="collapse-content">
-                            <p>hello</p>
-                        </div>
-                    </div>
-                    <hr class="background: rgba(19, 19, 24, 0.20)  w-[617px]">
-                    <div class="collapse collapse-plus ">
-                        <input type="radio" name="my-accordion-3" />
-                        <div class="collapse-title text-xl font-bold">
-                            Booking
-                        </div>
-                        <div class="collapse-content">
-                            <p>hello</p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <hr class="background: rgba(19, 19, 24, 0.20) mt-24 mb-8 w-[1170px] ">
-
-            <!--get in tuch section-->
-            <h2 class="text-[#131318] w-[318px] mx-auto font-extrabold text-4xl">Get In Touch</h2>
-            <p class="w-[607px] text-[#5d5d64] pt-6 mx-auto font-medium text-[16px]">Dit amet consectetur. Condimentum
-                dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
-
-            <hr class="background: rgba(19, 19, 24, 0.20) mt-6 mb-8 w-[1170px] ">
-
-
-            <div class="w-[1170px] h-[796px]  mx-0 flex">
-
-                <div class="w-[474px] h-[796px] rounded-2xl border-gray-200 mb-12
-    border-2">
-                    <div class="w-[374px] h-[216px] rounded-2xl mt-[50px] bg-[#BCED6D1A] mx-[50px]">
-                        <div class="pl-8 pt-8 pb-12 ">
-                            <img class="w-12 h-12 mb-6" src="Images/Group 1171275317.png" alt="">
-                            <h4 class="text-[16px] text-[#5d5d64] font-normal "> Phone Number : <br>
-                                <span class="text-[#131318] font-extrabold text-[18px]">(+62) 123-321-543</span>
-                            </h4>
-                        </div>
-                    </div>
-                    <div class="w-[374px] h-[216px] rounded-2xl my-6 bg-[#FDDD5F1A] mx-[50px]">
-                        <div class="pl-8 pt-8 pb-12 ">
-                            <img class="w-12 h-12 mb-6" src="Images/Group 1171275318.png" alt="">
-                            <h4 class="text-[16px] text-[#5d5d64] font-normal "> Email : <br>
-                                <span class="text-[#131318] font-extrabold text-[18px]">hockeys@support.com
-
-                                </span>
-                            </h4>
-                        </div>
-                    </div>
-                    <div class="w-[374px] h-[216px] rounded-2xl mb-[50px] bg-[#629CF31A] mx-[50px]">
-                        <div class="pl-8 pt-8 pb-12 ">
-                            <img class="w-12 h-12 mb-6" src="Images/Group 1171275321.png" alt="">
-                            <h4 class="text-[16px] text-[#5d5d64] font-normal "> Location : <br>
-                                <span class="text-[#131318] font-extrabold text-[18px]">152/1 Mohakhali Wireless
-                                    Gate</span>
-                            </h4>
-                        </div>
-                    </div>
+            <hr class="background: rgba(19, 19, 24, 0.20) mt-24 mb-8  ">
+        </section>
+        <!--Clients Question Sections-->
 
 
 
-                </div>
 
-                <div class="flex pl-6 flex-wrap gap-6">
-                    <div>
-                        <h4 class="text-[#131318] font-bold text-xl mb-4">Your Name</h4>
-                        <input class="w-[324px] h-[64px] rounded-xl pl-5 bg-[#13131808]" type="text"
-                            placeholder=" your full name">
-                    </div>
-                    <div>
-                        <h4 class="text-[#131318] font-bold text-xl mb-4">Your Email</h4>
-                        <input class="w-[324px] h-[64px] rounded-xl pl-5 bg-[#13131808]" type="email"
-                            placeholder="Enter your email">
-                    </div>
-                    <div>
-                        <h4 class="text-[#131318] font-bold text-xl mb-4">Subject</h4>
-                        <input class="w-[324px] h-[64px] rounded-xl pl-5 bg-[#13131808]" type="text"
-                            placeholder=" Enter your subject">
-                    </div>
-                    <div>
-                        <h4 class="text-[#131318] font-bold text-xl mb-4">Phone Number</h4>
-                        <input class="w-[324px] h-[64px] rounded-xl pl-5 bg-[#13131808]" type="number"
-                            placeholder="Enter your phone number">
-                    </div>
-                    <div>
-                        <h4 class="text-[#131318] font-bold text-xl mb-4">Message</h4>
-                        <input class="w-[672px] h-[370px] rounded-xl pl-5 pb-72 bg-[#13131808]" type="text"
-                            placeholder="Write your message">
-                    </div>
-                    <button
-                        class="btn btn-primary border-none text-white bg-[#FF4240] rounded-lg w-[672px] h-14 px-auto py-auto font-bold text-xl">Send
-                        Message
-                    </button>
-                </div>
+        <section class="lg:my-10 my-10 lg:px-24 px-8">
+            <div class="lg:mt-8 lg:space-y-6 text-center">
 
+                <h2 class="text-lg lg:text-4xl font-extrabold ">Clients Question</h2>
+                <p class="lg:w-[500px] mx-auto text-opacity-80">Preston Hockey Club Official. 227 likes · 40 talking about this. Est 1903, Home to 7 mens, 3 Ladies and 3 Junior Teams</p>
+
+                <hr class="background: rgba(19, 19, 24, 0.20) mt-6 mb-8  ">
             </div>
 
-            <div class="w-[1170px] h-[150px] mt-12 mb-24 bg-[#13131808] rounded-xl">
-                <h4 class="text-[#131318] pt-8 pb-6 ml-[510px]  font-extrabold text-2xl">Social Media</h4>
-                <div class="flex gap-2 items-center justify-center ">
+
+            <div class="my-10">
+                <!--question 1 -->
+                <div class="collapse collapse-plus bg-base-200">
+                    <div class="hero lg:min-h-screen">
+                        <div class="hero-content flex-col lg:flex-row">
+                            <img src="Images/11.png" class="lg:max-w-sm rounded-xl shadow-2xl" />
+                            <div>
+                                <div class="collapse collapse-plus bg-base-200">
+                                    <input type="radio" name="my-accordion-3" checked="checked" />
+                                    <div class="collapse-title text-xl font-extrabold">
+                                        Our Equipment
+                                    </div>
+                                    <div class="collapse-content">
+                                        <p>Preston Hockey Club Official. 227 likes · 40 talking about this. Est 1903,
+                                            Home to 7 mens, 3 Ladies and 3 Junior Teams</p>
+                                    </div>
+                                </div>
+                                <!--question 2-->
+                                <div class="collapse collapse-plus bg-base-200">
+                                    <input type="radio" name="my-accordion-3" />
+                                    <div class="collapse-title text-xl font-extrabold">
+                                        Hockey Training
+                                    </div>
+                                    <div class="collapse-content">
+                                        <p>Preston Hockey Club Official. 227 likes · 40 talking about this. Est 1903,
+                                            Home to 7 mens, 3 Ladies and 3 Junior Teams</p>
+                                    </div>
+                                </div>
+                                <!--question 3-->
+                                <div class="collapse collapse-plus bg-base-200">
+                                    <input type="radio" name="my-accordion-3" />
+                                    <div class="collapse-title text-xl font-extrabold">
+                                        Private Lessons
+                                    </div>
+                                    <div class="collapse-content">
+                                        <p>Preston Hockey Club Official. 227 likes · 40 talking about this. Est 1903,
+                                            Home to 7 mens, 3 Ladies and 3 Junior Teams</p>
+                                    </div>
+                                </div>
+                                <!--question 4-->
+                                <div class="collapse collapse-plus bg-base-200">
+                                    <input type="radio" name="my-accordion-3" />
+                                    <div class="collapse-title text-xl font-extrabold">
+                                        Ski Touring
+                                    </div>
+                                    <div class="collapse-content">
+                                        <p>Preston Hockey Club Official. 227 likes · 40 talking about this. Est 1903,
+                                            Home to 7 mens, 3 Ladies and 3 Junior Teams</p>
+                                    </div>
+                                </div>
+                                <!--question 5-->
+                                <div class="collapse collapse-plus bg-base-200">
+                                    <input type="radio" name="my-accordion-3" />
+                                    <div class="collapse-title text-xl font-extrabold">
+                                        Booking
+                                    </div>
+                                    <div class="collapse-content">
+                                        <p>Preston Hockey Club Official. 227 likes · 40 talking about this. Est 1903,
+                                            Home to 7 mens, 3 Ladies and 3 Junior Teams</p>
+                                    </div>
+                                </div>
+                                <!--question 6-->
+                                <div class="collapse collapse-plus bg-base-200">
+                                    <input type="radio" name="my-accordion-3" />
+                                    <div class="collapse-title text-xl font-extrabold">
+                                        Pricings
+                                    </div>
+                                    <div class="collapse-content">
+                                        <p>Preston Hockey Club Official. 227 likes · 40 talking about this. Est 1903,
+                                            Home to 7 mens, 3 Ladies and 3 Junior Teams</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+
+
+        <!--get in tuch section-->
+        <section class="my-20 lg:px-24 px-8">
+            <div class="lg:mt-8 lg:space-y-6 text-center">
+
+                <hr class="background: rgba(19, 19, 24, 0.20) mt-24 mb-8  ">
+
+                <h2 class="text-[#131318] text-lg mx-auto font-extrabold lg:text-4xl">Get In Touch</h2>
+                <p class="lg:w-[550px] text-[#5d5d64] pt-6 mx-auto font-medium text-[16px]">Dit amet consectetur.
+                    Condimentum
+                    dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+
+                <hr class="background: rgba(19, 19, 24, 0.20) mt-6 mb-8  "><br>
+            </div>
+
+            <div class=" my-12 grid gap-6 grid-cols-1 lg:grid-cols-3">
+                <div class="space-y-6">
+                    <div class="h-36 relative">
+                        <img class="absolute mt-6 ml-3" src="Images/Group 1171275317.png" alt="">
+                        <input type="text" placeholder="Phone Number:" 
+                        class=" h-40 relative bg-[#BCED6D1A] border-none mt-2 input input-bordered w-full " />
+                        <h6 class="font-extrabold absolute bottom-3 pl-4">
+                            (+62) 123-321-543</h6>
+                    </div>
+                    <div class="h-36 relative">
+                        <img class="absolute mt-6 ml-3" src="Images/Group 1171275318.png" alt="">
+                        <input type="text" placeholder="Email:" 
+                        class=" h-40 relative bg-[#FDDD5F1A] border-none  mt-2 input input-bordered w-full " />
+     <h6 class="font-extrabold absolute bottom-3 pl-4">hockeys@support.com</h6>
+                    </div>
+                    <div class="h-36 relative">
+                        <img class="absolute mt-6 ml-3" src="Images/Group 1171275321.png" alt="">
+                        <input type="text" placeholder="Location:" 
+                        class=" h-40 relative bg-[#629CF31A] border-none  mt-2 input input-bordered w-full " />
+                        <h6 class="font-extrabold absolute bottom-3 pl-4">152/1 Mohakhali Wireless Gate</h6>
+                    </div>
+
+                </div>
+                <div class="lg:col-span-2">
+                    <div class="grid gap-6 grid-cols-1 lg:grid-cols-2">
+                      <div>
+                        <label class="font-extrabold" for="">Your Name</label>
+                        <input type="text" placeholder="Enter your full name" class="mt-2 border-none bg-[#13131808] input input-bordered w-full " />
+                      </div>
+
+                        <div>
+                            <label class="font-extrabold" for="">Your Email</label>
+                        <input type="text" placeholder="Enter your email" class=" mt-2 border-none bg-[#13131808] input input-bordered w-full " />
+                        </div>
+                        <div>
+                            <label class="font-extrabold" for="">Subject</label>
+                        <input type="text" placeholder="Enter your subject" class=" mt-2 border-none bg-[#13131808] input input-bordered w-full " />
+                        </div>
+                        <div>
+                            <label class="font-extrabold" for="">Phone Number</label>
+                    <input type="text" placeholder="Enter your phone number" class=" mt-2 border-none bg-[#13131808] input input-bordered w-full " />
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <label class="font-extrabold" for="">Message</label>
+                        <textarea class=" w-full mt-2 textarea textarea-bordered bg-[#13131808] " placeholder="Bio" rows="7">Write your message</textarea>
+                    </div>
+                    <button class="btn bg-[#FF4240] w-full mt-6 text-white border-none">Send Message</button>
+                </div>
+            </div>
+
+        </section>
+    <!-- Social Media section -->
+    <section class="my-20 lg:px-24 px-8 text-center ">
+            <div class=" lg:h-[150px] lg:Lmt-12 lg:mb-24 bg-[#13131808] rounded-xl">
+                <h4 class="text-[#131318] pt-8 pb-6 lg:mx-auto  font-extrabold text-2xl">Social Media</h4>
+                <div class="flex gap-2 items-center justify-center pb-6 ">
                     <div class="w-6 h-6">
                         <svg xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
@@ -680,14 +741,15 @@
                 </div>
 
             </div>
+        </section>
     </main>
-
-    <footer class="footer text-white w-[1440px] h-[454px]  bg-black text-base-content">
-        <div class="my-[100px] ml-[135px]">
+<!--footer section-->
+    <footer class="footer text-white  lg:h-[454px]  bg-black text-base-content">
+        <div class="lg:my-[100px] lg:ml-[135px]">
             <h3 class="text-white text-[28px] font-extrabold">
                 Get In Touch
             </h3>
-            <p class="text-[#5d5d64] text-[16px] pt-4 w-[346px] h-[78px] font-medium">Lorem ipsum dolor sit amet
+            <p class="text-[#5d5d64] text-[16px] pt-4 lg:w-[346px] lg:h-[78px] font-medium">Lorem ipsum dolor sit amet
                 consectetur adipisicing elit. Id, animi?</p>
             <div class="flex gap-8">
                 <svg class="w-6 h-6 rounded-lg bg-[#7e7c7c]" xmlns="http://www.w3.org/2000/svg"
